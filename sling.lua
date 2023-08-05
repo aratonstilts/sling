@@ -11,6 +11,10 @@ local PlayerGui = Player.PlayerGui
 local mainGui = PlayerGui:WaitForChild("MainGui")
 local otherFrames = mainGui:WaitForChild("OtherFrames")
 local fullGui = otherFrames:WaitForChild("FullPopup")
+local backgroundFrame = mainGui:WaitForChild("BackgroundFrame")
+
+local lighting = game:GetService("Lighting")
+local blur = lighting:WaitForChild("Blur")
 
 local GetM = game.Players.LocalPlayer:GetMouse() 
 repeat wait() until GetM
